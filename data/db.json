@@ -1,0 +1,14 @@
+{
+    "blogs": [
+        {
+            "id": 1,
+            "body": "why do we use it?\nIt is a long established fact that a reader.",
+            "author": "mario"
+        },
+        {
+            "id": 2,
+            "body": "why do we use it?\nIt is a long established fact that a reader.",
+            "author": "yoshi"
+        }
+    ]
+}
