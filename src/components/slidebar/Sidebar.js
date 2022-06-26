@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 //add icons
 import MenuIcon from "@mui/icons-material/Menu";
@@ -10,15 +11,17 @@ import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import LogoutIcon from '@mui/icons-material/Logout';
 
 const Sidebar = () => {
+  const [ show,setShow ] = useState(false);
+
   return (
-    <section>
-      <header className="header">
-        <div className="header-toggle">
+    <main className={ show ? 'space-toggle': null}>
+      <header className={`header ${show ? 'space-toggle' : null}`}>
+        <div className="header-toggle" onClick={() => setShow(!show)}>
           <MenuIcon />
         </div>
       </header>
 
-      <aside className="sidebar">
+      <aside className={`sidebar ${show ? 'show' : null}`}>
         <nav className="nav">
           <div>
             <Link to="/" className="nav-logo">
@@ -26,30 +29,30 @@ const Sidebar = () => {
               <span className="nav-logo-name">Homepage</span>
             </Link>
 
-            <div className="nav-list">
-              <Link to="/dashboard" className="nav-link">
+            <div className="nav-list show">
+              <Link to="/dashboard" className="nav-link active">
                 <DashboardIcon className="nav-link-icon" />
-                <span className="nav-logo-name">Dashboard</span>
+                <span className="nav-link-name">Dashboard</span>
               </Link>
 
               <Link to="/hotel" className="nav-link">
                 <HotelIcon className="nav-link-icon" />
-                <span className="nav-logo-name">Hotel</span>
+                <span className="nav-link-name">Hotel</span>
               </Link>
 
               <Link to="/gallery" className="nav-link">
                 <CollectionsIcon className="nav-link-icon" />
-                <span className="nav-logo-name">Gallery</span>
+                <span className="nav-link-name">Gallery</span>
               </Link>
 
               <Link to="/gallery" className="nav-link">
                 <CollectionsIcon className="nav-link-icon" />
-                <span className="nav-logo-name">Transaction</span>
+                <span className="nav-link-name">Transaction</span>
               </Link>
 
               <Link to="/transaction" className="nav-link">
                 <AttachMoneyIcon className="nav-link-icon" />
-                <span className="nav-logo-name">Transaction</span>
+                <span className="nav-link-name">Transaction</span>
               </Link>
             </div>
 
@@ -60,9 +63,8 @@ const Sidebar = () => {
           </div>
         </nav>
       </aside>
-
-      <h1>Content</h1>
-    </section>
+      <h1>content</h1>
+    </main>
   );
 };
 
