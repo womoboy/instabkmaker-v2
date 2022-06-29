@@ -1,10 +1,10 @@
 import MenuIcon from "@mui/icons-material/Menu";
 
-const Header = () => {
+const Header = ({ handleToggle, toggleState }) => {
   return (
-    <header className="header">
+    <header className={`header ${toggleState ? 'toggle-space' : null}`}>
       <div className="left">
-        <div className="header-toggle">
+        <div className="header-toggle" onClick={ handleToggle }>
           <MenuIcon />
         </div>
       </div>

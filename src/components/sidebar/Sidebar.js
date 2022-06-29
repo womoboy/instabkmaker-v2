@@ -5,9 +5,10 @@ import TheatersIcon from "@mui/icons-material/Theaters";
 import ColorLensIcon from "@mui/icons-material/ColorLens";
 import SettingsIcon from "@mui/icons-material/Settings";
 
-const Sidebar = () => {
+const Sidebar = ({ toggleState }) => {
+
   return (
-    <aside className="sidebar">
+    <aside className={`sidebar ${toggleState ? 'sidebar-show' : null}`}>
       <nav className="nav">
         <div className="nav-list">
           <Link to="/" className="nav-link">
