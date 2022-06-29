@@ -20,16 +20,24 @@
   --nav-width: 70px;
 }
 
-body::-webkit-scrollbar {
+/*scrollbar style*/
+/*for firefox*/
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--white-color) #323d4f;
+}
+
+/*for chrome, edge, and safary*/
+*::-webkit-scrollbar {
   width: 8px;
 }
 
-body::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
   background: #323d4f;
 }
 
-body::-webkit-scrollbar-thumb {
-  background-color: var(--first-color);   
+*::-webkit-scrollbar-thumb {
+  background-color: var(--white-color);   
   border-radius: 20px;
   border: 2px solid #323d4f;
 }
