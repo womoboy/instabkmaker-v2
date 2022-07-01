@@ -1,0 +1,12 @@
+.list-menu {
+    padding: 0 2rem;
+}
+
+.list-menu select {
+    padding: 1rem;
+    display: block;
+}
+
+.list-menu * {
+    padding: 1rem;
+}

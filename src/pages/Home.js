@@ -1,21 +1,41 @@
 import "./Home.css";
+import ListMenu from '../components/listMenu/ListMenu';
+import ListOptions from '../components/listOptions/ListOptions';
+import { useState, useEffect } from 'react';
 
 const Home = () => {
+  const [menusData, setMenusData] = useState(null);
+
+  useEffect(() => {
+    const getMenus = async () => {
+      const res = await fetch("http://localhost:8000/menus");
+      const data = await res.json();
+      if(data) {
+        setMenusData(data);
+      }
+    }
+    getMenus();
+  }, []);
+
+  const handleChange = () => {
+
+  }
+
   return (
     <div className="home">
+      <section className="menu-section">
+        <ListMenu ListMenu={menusData ? menusData : null} />
+      </section>
       <section className="split video-section">
         <div className="split-frame">
           <div id="theater">
             <video id="video" src="/video/vfx_01.mp4"></video>
-            <canvas id="canvas"></canvas>
-            <label>
-              <br />
-              try to play me
-            </label>
           </div>
         </div>
         <div className="split-frame">
-          <div>this is munu</div>
+          <div className="menu">
+            <ListOptions />
+          </div>
         </div>
       </section>
     </div>

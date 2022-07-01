@@ -1,14 +1,18 @@
 {
-    "blogs": [
+    "menus": [
         {
             "id": 1,
-            "body": "why do we use it?\nIt is a long established fact that a reader.",
-            "author": "mario"
+            "title": "Menu1",
+            "app_format": "instagram",
+            "frame_type": "post",
+            "menu_type": "price-list"
         },
         {
             "id": 2,
-            "body": "why do we use it?\nIt is a long established fact that a reader.",
-            "author": "yoshi"
+            "title": "Menu2",
+            "app_format": "instagram",
+            "frame_type": "story",
+            "menu_type": "account-info"
         }
     ]
 }
