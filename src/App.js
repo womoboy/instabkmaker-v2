@@ -13,7 +13,7 @@ const App = () => {
   const [toggleState, setToggleState] = useState(false);
 
   useEffect(() => {
-    console.log(toggleState);
+    console.log(`toggle clicked! ${toggleState}`)
   }, [toggleState]);
 
   const handleToggle = ()=> {

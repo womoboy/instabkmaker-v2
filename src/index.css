@@ -22,22 +22,22 @@
 
 /*scrollbar style*/
 /*for firefox*/
-* {
+html {
   scrollbar-width: thin;
   scrollbar-color: var(--white-color) #323d4f;
 }
 
 /*for chrome, edge, and safary*/
-*::-webkit-scrollbar {
+html::-webkit-scrollbar {
   width: 8px;
 }
 
-*::-webkit-scrollbar-track {
+html::-webkit-scrollbar-track {
   background: #323d4f;
 }
 
-*::-webkit-scrollbar-thumb {
-  background-color: var(--white-color);   
+html::-webkit-scrollbar-thumb {
+  background-color: var(--white-color);
   border-radius: 20px;
   border: 2px solid #323d4f;
 }
@@ -78,7 +78,7 @@ ul {
   background-color: var(--first-color);
   padding-left: 1rem;
   transition: all 0.5s;
-  z-index: 1;
+  z-index: 10;
 }
 
 .header .left,
@@ -130,7 +130,7 @@ header.toggle-space {
   box-shadow: 0 0 1rem black;
   overflow: hidden;
   transition: all 0.5s;
-  z-index: 1;
+  z-index: 10;
 }
 
 aside.sidebar-show {

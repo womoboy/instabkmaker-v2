@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 
 const Home = () => {
   const [menusData, setMenusData] = useState(null);
+  const [ menuId, setMenuId ] = useState(null);
 
   useEffect(() => {
     const getMenus = async () => {
@@ -15,16 +16,19 @@ const Home = () => {
       }
     }
     getMenus();
-  }, []);
+    {menuId && 
+      console.log(menuId);
+    }
+  }, [menuId]);
 
-  const handleChange = () => {
-
+  const handleChange = (id) => {
+    setMenuId(id);
   }
 
   return (
     <div className="home">
       <section className="menu-section">
-        <ListMenu ListMenu={menusData ? menusData : null} />
+        <ListMenu listMenu={menusData ? menusData : null} handleChange={ handleChange } />
       </section>
       <section className="split video-section">
         <div className="split-frame">

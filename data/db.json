@@ -5,11 +5,49 @@
             "title": "Menu1",
             "app_format": "instagram",
             "frame_type": "post",
-            "menu_type": "price-list"
+            "menu_type": "price-list",
+            "options": [
+                
+            ]
         },
         {
             "id": 2,
             "title": "Menu2",
+            "app_format": "instagram",
+            "frame_type": "story",
+            "menu_type": "account-info"
+        },
+        {
+            "id": 3,
+            "title": "Menu3",
+            "app_format": "instagram",
+            "frame_type": "story",
+            "menu_type": "account-info"
+        },
+        {
+            "id": 4,
+            "title": "Menu4",
+            "app_format": "instagram",
+            "frame_type": "story",
+            "menu_type": "account-info"
+        },
+        {
+            "id": 5,
+            "title": "Menu5",
+            "app_format": "instagram",
+            "frame_type": "story",
+            "menu_type": "account-info"
+        },
+        {
+            "id": 6,
+            "title": "Menu6",
+            "app_format": "instagram",
+            "frame_type": "story",
+            "menu_type": "account-info"
+        },
+        {
+            "id": 7,
+            "title": "Menu7",
             "app_format": "instagram",
             "frame_type": "story",
             "menu_type": "account-info"
