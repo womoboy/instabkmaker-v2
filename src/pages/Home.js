@@ -1,6 +1,7 @@
 import "./Home.css";
 import ListMenu from '../components/listMenu/ListMenu';
 import ListOptions from '../components/listOptions/ListOptions';
+import TestComponent from '../components/testComponent/TestComponent';
 import { useState, useEffect } from 'react';
 
 const Home = () => {
@@ -38,7 +39,8 @@ const Home = () => {
         </div>
         <div className="split-frame">
           <div className="menu">
-            <ListOptions />
+            <TestComponent />
+            {/* <ListOptions menuId={menuId && menuId} /> */}
           </div>
         </div>
       </section>

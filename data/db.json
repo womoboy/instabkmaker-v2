@@ -1,56 +1,102 @@
 {
-    "menus": [
-        {
-            "id": 1,
-            "title": "Menu1",
-            "app_format": "instagram",
-            "frame_type": "post",
-            "menu_type": "price-list",
-            "options": [
-                
-            ]
-        },
-        {
-            "id": 2,
-            "title": "Menu2",
-            "app_format": "instagram",
-            "frame_type": "story",
-            "menu_type": "account-info"
-        },
-        {
-            "id": 3,
-            "title": "Menu3",
-            "app_format": "instagram",
-            "frame_type": "story",
-            "menu_type": "account-info"
-        },
-        {
-            "id": 4,
-            "title": "Menu4",
-            "app_format": "instagram",
-            "frame_type": "story",
-            "menu_type": "account-info"
-        },
-        {
-            "id": 5,
-            "title": "Menu5",
-            "app_format": "instagram",
-            "frame_type": "story",
-            "menu_type": "account-info"
-        },
-        {
-            "id": 6,
-            "title": "Menu6",
-            "app_format": "instagram",
-            "frame_type": "story",
-            "menu_type": "account-info"
-        },
-        {
-            "id": 7,
-            "title": "Menu7",
-            "app_format": "instagram",
-            "frame_type": "story",
-            "menu_type": "account-info"
-        }
-    ]
+  "menus": [
+    {
+      "id": 1,
+      "title": "Menu1",
+      "app_format": "instagram",
+      "frame_type": "post",
+      "menu_type": "price-list",
+      "options": [
+        { "id": 1, "type": "text", "label": "pice1", "value": "" },
+        { "id": 2, "type": "number", "label": "price2", "value": "" },
+        { "id": 3, "type": "text", "label": "price3", "value": "" },
+        { "id": 4, "type": "text", "label": "price4", "value": "" },
+        { "id": 5, "type": "number", "label": "price5", "value": "" }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Menu2",
+      "app_format": "instagram",
+      "frame_type": "story",
+      "menu_type": "account-info",
+      "options": [
+        { "id": 1, "type": "text", "label": "pice1", "value": "" },
+        { "id": 2, "type": "number", "label": "price2", "value": "" },
+        { "id": 3, "type": "text", "label": "price3", "value": "" },
+        { "id": 4, "type": "text", "label": "price4", "value": "" },
+        { "id": 5, "type": "number", "label": "price5", "value": "" }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Menu3",
+      "app_format": "instagram",
+      "frame_type": "story",
+      "menu_type": "account-info",
+      "options": [
+        { "id": 1, "type": "text", "label": "pice1", "value": "" },
+        { "id": 2, "type": "number", "label": "price2", "value": "" },
+        { "id": 3, "type": "text", "label": "price3", "value": "" },
+        { "id": 4, "type": "text", "label": "price4", "value": "" },
+        { "id": 5, "type": "number", "label": "price5", "value": "" }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Menu4",
+      "app_format": "instagram",
+      "frame_type": "story",
+      "menu_type": "account-info",
+      "options": [
+        { "id": 1, "type": "text", "label": "pice1", "value": "" },
+        { "id": 2, "type": "number", "label": "price2", "value": "" },
+        { "id": 3, "type": "text", "label": "price3", "value": "" },
+        { "id": 4, "type": "text", "label": "price4", "value": "" },
+        { "id": 5, "type": "number", "label": "price5", "value": "" }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Menu5",
+      "app_format": "instagram",
+      "frame_type": "story",
+      "menu_type": "account-info",
+      "options": [
+        { "id": 1, "type": "text", "label": "pice1", "value": "" },
+        { "id": 2, "type": "number", "label": "price2", "value": "" },
+        { "id": 3, "type": "text", "label": "price3", "value": "" },
+        { "id": 4, "type": "text", "label": "price4", "value": "" },
+        { "id": 5, "type": "number", "label": "price5", "value": "" }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Menu6",
+      "app_format": "instagram",
+      "frame_type": "story",
+      "menu_type": "account-info",
+      "options": [
+        { "id": 1, "type": "text", "label": "pice1", "value": "" },
+        { "id": 2, "type": "number", "label": "price2", "value": "" },
+        { "id": 3, "type": "text", "label": "price3", "value": "" },
+        { "id": 4, "type": "text", "label": "price4", "value": "" },
+        { "id": 5, "type": "number", "label": "price5", "value": "" }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Menu7",
+      "app_format": "instagram",
+      "frame_type": "story",
+      "menu_type": "account-info",
+      "options": [
+        { "id": 1, "type": "text", "label": "pice1", "value": "" },
+        { "id": 2, "type": "number", "label": "price2", "value": "" },
+        { "id": 3, "type": "text", "label": "price3", "value": "" },
+        { "id": 4, "type": "text", "label": "price4", "value": "" },
+        { "id": 5, "type": "number", "label": "price5", "value": "" }
+      ]
+    }
+  ]
 }
