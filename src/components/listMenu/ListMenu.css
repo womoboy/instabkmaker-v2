@@ -12,6 +12,10 @@
   color: rgb(243, 243, 243);
 }
 
+.list-menu .frame {
+  padding: 1rem;
+}
+
 .list-menu .dropdown {
   display: grid;
   grid-template-columns: 1fr;

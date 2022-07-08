@@ -39,8 +39,7 @@ const Home = () => {
         </div>
         <div className="split-frame">
           <div className="menu">
-            <TestComponent />
-            {/* <ListOptions menuId={menuId && menuId} /> */}
+            <ListOptions menuId={menuId && menuId} />
           </div>
         </div>
       </section>

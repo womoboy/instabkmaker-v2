@@ -1,4 +1,5 @@
 import MenuIcon from "@mui/icons-material/Menu";
+import './Header.css';
 
 const Header = ({ handleToggle, toggleState }) => {
   return (

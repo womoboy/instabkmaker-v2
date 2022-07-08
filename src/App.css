@@ -1,0 +1,18 @@
+.App main {
+  padding-top: calc(var(--header-height));
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.App main.toggle-space {
+  padding-left: calc(var(--nav-width));
+}
+
+@media screen and (min-width: 768px) {
+  .App main {
+    padding-left: calc(var(--nav-width));
+  }
+
+  .App main.toggle-space {
+    padding-left: calc(var(--nav-width) + 8rem);
+  }
+}

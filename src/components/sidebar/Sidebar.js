@@ -4,6 +4,7 @@ import DashboardIcon from "@mui/icons-material/Dashboard";
 import TheatersIcon from "@mui/icons-material/Theaters";
 import ColorLensIcon from "@mui/icons-material/ColorLens";
 import SettingsIcon from "@mui/icons-material/Settings";
+import './Sidebar.css';
 
 const Sidebar = ({ toggleState }) => {
 

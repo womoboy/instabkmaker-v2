@@ -1,0 +1,114 @@
+.list-options {
+    background-color: #647ca5;
+    width: min(100%, 512px);
+    height: 512px;
+    position: relative;
+    margin: auto;
+}
+
+.list-options .no-select-frame,
+.list-opitons from {
+    flex: 1;
+}
+
+.list-options .no-select-frame {
+    background-color: var(--secound-color);
+    color: var(--white-color);
+    padding: 1rem;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.list-options form {
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    justify-content: center;
+    padding: 1rem;
+    row-gap: 1rem;
+    height: 100%;
+}
+
+.list-options form h2 {
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.241);
+}
+
+.list-options .option-list-frame {
+    overflow-y: scroll;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    background-color: rgba(0, 0, 0, 0.241);
+    padding: 1rem;
+}
+
+.list-options .option {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.188);
+    padding: 1rem;
+    position: relative;
+}
+
+.list-options .option label {
+    flex: 1;
+    padding: 1rem 0;
+}
+
+.list-options .option .single-input-frame,
+.list-options .option .double-input-frame {
+    flex: 3;
+    display: flex;
+}
+
+.list-options input {
+    background: rgba(255, 255, 255, 0.205);
+    border: none;
+    padding: 1rem;
+    color: var(--white-color);
+}
+
+.list-options .option .single-input-frame input {
+    flex: 1;
+    width: min(100%, 512px);
+}
+
+.list-options .option .double-input-frame input[type="text"] {
+    flex: 3;
+    color: red;
+    width: min(50%, 512px);
+}
+
+.list-options .option .double-input-frame input[type="number"] {
+    flex: 1;
+    width: min(50%, 512px);
+    background-color: rgba(0, 0, 0, 0.193);
+}
+
+.list-options .save-button {
+    width: min(60%, 512px);
+    background-color: rgba(101, 107, 128, 0.455);
+    padding: 0.5rem 1rem;
+    border: 1px solid rgb(174, 174, 174);
+    color: rgb(190, 190, 190);
+    transition: all 0.3s;
+}
+
+.list-options .save-button.active {
+    background-color: rgb(69, 69, 233);
+    color: var(--white-color);
+    border: 1px solid transparent;
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.226) ;
+}

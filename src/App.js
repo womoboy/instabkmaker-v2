@@ -8,6 +8,7 @@ import Design from "./pages/Design";
 import Setting from "./pages/Setting";
 import NoPage from "./pages/NoPage";
 import { useState, useEffect } from 'react';
+import './App.css';
 
 const App = () => {
   const [toggleState, setToggleState] = useState(false);

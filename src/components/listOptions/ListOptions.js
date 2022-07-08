@@ -1,4 +1,5 @@
 import { useEffect, useState, useCallback } from "react";
+import "./ListOptions.css";
 
 const ListOptions = ({ menuId }) => {
   const [options, setOptions] = useState(null);
@@ -25,52 +26,34 @@ const ListOptions = ({ menuId }) => {
     }
   });
 
-  const createForm = () => {
-    if (options) {
-      <form>
-        {options.map((data) => {
-          <div key={data.id} className="option">
-            <label>{data.label}</label>
-            <div className="inputs-frame">
-              {data.type === "text" ? (
-                <input type="text" />
-              ) : (
-                <>
-                  <input type="text" />
-                  <input type="number" />
-                </>
-              )}
-            </div>
-          </div>;
-        })}
-      </form>;
-    }
-  };
-
   return (
     <div className="list-options">
       {options ? (
         <form>
-          {options.map((option) => {
-            return (
-              <div className="option" key={option.id}>
-                <label>{option.label}</label>
-                {option.type === "text" ? (
-                  <div>
-                    <input type="text" />
-                  </div>
-                ) : (
-                  <div>
-                    <input type="text" />
-                    <input type="number" />
-                  </div>
-                )}
-              </div>
-            );
-          })}
+          <h2>Options</h2>
+          <div className="option-list-frame">
+            {options.map((option) => {
+              return (
+                <div className="option" key={option.id}>
+                  <label>{option.label}</label>
+                  {option.type === "text" ? (
+                    <div className="single-input-frame">
+                      <input type="text" />
+                    </div>
+                  ) : (
+                    <div className="double-input-frame">
+                      <input type="text" />
+                      <input type="number" />
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+          <button className="save-button">Save</button>
         </form>
       ) : (
-        "No selected menu"
+        <div className="no-select-frame">"No selected menu"</div>
       )}
     </div>
   );
