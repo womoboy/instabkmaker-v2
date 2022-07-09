@@ -51,6 +51,22 @@
     row-gap: 1rem;
     background-color: rgba(0, 0, 0, 0.241);
     padding: 1rem;
+    /*scrollbar for firefox*/
+    scrollbar-width: thin;
+}
+/*scrollbar for chrome*/
+.list-options .option-list-frame::-webkit-scrollbar {
+    width: 8px;
+}
+
+.list-options .option-list-frame::-webkit-scrollbar-track {
+    background: #323d4f;
+}
+
+.list-options .option-list-frame::-webkit-scrollbar-thumb {
+    background-color: var(--white-color);
+    border-radius: 8px;
+    border: 2px solid #323d4f;
 }
 
 .list-options .option {
@@ -87,7 +103,6 @@
 
 .list-options .option .double-input-frame input[type="text"] {
     flex: 3;
-    color: red;
     width: min(50%, 512px);
 }
 

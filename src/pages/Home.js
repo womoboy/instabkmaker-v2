@@ -31,6 +31,7 @@ const Home = () => {
       <section className="menu-section">
         <ListMenu listMenu={menusData ? menusData : null} handleChange={ handleChange } />
       </section>
+
       <section className="split video-section">
         <div className="split-frame">
           <div id="theater">
@@ -42,6 +43,10 @@ const Home = () => {
             <ListOptions menuId={menuId && menuId} />
           </div>
         </div>
+      </section>
+
+      <section>
+        
       </section>
     </div>
   );

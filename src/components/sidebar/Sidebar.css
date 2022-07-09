@@ -33,6 +33,14 @@ aside.sidebar-show {
   width: 100%;
 }
 
+.sidebar .nav-link:hover {
+  color: var(--white-color);
+}
+
+.sidebar .nav-link:active {
+  color: var(--on-color);
+}
+
 .sidebar .frame {
   padding: 1rem;
   display: flex;
