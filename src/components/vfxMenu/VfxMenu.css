@@ -1,0 +1,7 @@
+.vfx-menu {
+    background-color: blue;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}

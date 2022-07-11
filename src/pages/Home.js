@@ -3,6 +3,7 @@ import ListMenu from '../components/listMenu/ListMenu';
 import ListOptions from '../components/listOptions/ListOptions';
 import TestComponent from '../components/testComponent/TestComponent';
 import { useState, useEffect } from 'react';
+import VfxMenu from "../components/vfxMenu/VfxMenu";
 
 const Home = () => {
   const [menusData, setMenusData] = useState(null);
@@ -45,8 +46,12 @@ const Home = () => {
         </div>
       </section>
 
-      <section>
-        
+      <section className="vfx-section">
+        <VfxMenu />
+      </section>
+
+      <section style={{height: '500px',backgroundColor: 'red'}}>
+
       </section>
     </div>
   );

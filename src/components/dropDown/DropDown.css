@@ -1,0 +1,70 @@
+.drop-down {
+    position: relative;
+    width: min(100%, 512px);
+    margin: auto;
+}
+
+.drop-down .select-frame {
+  position: relative;
+  background-color: #647ca5;
+}
+
+.drop-down .select-label {
+  color: var(--white-color);
+  padding: 0.5rem 1rem;
+  display: block;
+  cursor: pointer;
+}
+
+.drop-down .caret {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid white;
+  transition: all 0.3s;
+  pointer-events: none;
+}
+
+/*when caret get active class*/
+.drop-down .caret.active {
+  transform: translateY(-50%) rotate(-180deg);
+}
+
+.drop-down input[type="radio"] {
+    display: none;
+}
+
+.drop-down .list-option {
+    background-color: #354052;
+    transition: all 0.3s;
+    position: absolute;
+    top: 2.1.2rem;
+    left: 0;
+    width: 100%;
+    overflow-y: scroll;
+    height: 0;
+    opacity: 0;
+    z-index: 1;
+    
+}
+
+.drop-down .list-option.active {
+    height: 320px;
+    opacity: 1;
+}
+
+.drop-down .option label{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.254);
+    width: 100%;
+    cursor: pointer;
+    color: var(--white-color);
+}
+
+.drop-down .option:hover {
+    background-color: var(--secound-color);
+}
